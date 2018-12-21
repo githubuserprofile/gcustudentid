@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#wrapper {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#nav-bar {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: #522398;
+}
+
+#nav-left {
+    float: left;
+    height: 35.2%;
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% + -1px));
+}
+
+#nav-right {
+    float: right;
+    height: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(calc(-50% + -1px));
+}
+
+#gcu-banner {
+    position: relative;
+    left: 50%;
+    margin-top: 45px;
+    transform: translate(-50%, 0);
+    width: 80%;
+}
+
+#picture-wrapper {
+    position: relative;
+    left: 50%;
+    margin-top: 2px;
+    transform: translate(-50%, 0);
+    width: 50%;
+    padding-top: 66.66%;
+
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#picture {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#name {
+    position: relative;
+    padding-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    font-size: 1.3rem;
+    font-family: Arial;
+}
+
+#date {
+    position: relative;
+    padding-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    font-size: 0.65rem;
+    font-family: Arial;
+    animation-name: slide;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes slide {
+    0% {
+        left: 100%;
+        transform: translateX(0);
+    }
+
+    10% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    90% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        left: 0%;
+        transform: translateX(-100%);
+    }
+}
+
+#barcode {
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+}
+
+#student-id-barcode {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+    height: 40px;
+    background: #522398;
+    display: block;
+    color: white;
+    font-weight: 400;
+    left: 50%;
+    border-radius: 7px;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding-top: 11px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+input[type=text],
+input[type=number] {
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #522398;
+    display: block;
+    color: #522398;
+    font-weight: 400;
+    left: 50%;
+    border-radius: 7px;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    text-align: center;
+    padding-top: 3px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #333;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #333;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #333;
+}
+
+#create-btn {
+    position: relative;
+    width: 40%;
+    height: 40px;
+    background: #522398;
+    display: block;
+    color: white;
+    font-weight: 400;
+    left: 50%;
+    border-radius: 7px;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+#image-placeholder {
+    background: rgb(233, 233, 233);
+    width: 50px;
+    position: relative;
+    left: 50%;
+    margin-top: 15px;
+    transform: translate(-50%, 0);
+    width: 50%;
+    padding-top: 66.66%;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+#nav-text {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}

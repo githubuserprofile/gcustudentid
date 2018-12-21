@@ -1,7 +1,7 @@
 {
     "short_name": "Student ID",
     "name": "Mock GCU Student ID",
-    "start_url": "index.html",
+    "start_url": "/gcustudentid/index.html",
     "background_color": "#522398",
     "display": "standalone",
     "theme_color": "#000000",
